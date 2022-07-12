@@ -30,7 +30,6 @@ align-items: center;
 p{
 font-size: 14px;
 font-family: 'Fraunces';
-
 text-align: justify;
 }
 h1{
@@ -50,20 +49,37 @@ display: inline-block;
 }
 
 #container-a{
-background-color: aqua;
+
 background-image: url(images/image-product-desktop.jpg);
-background-size: contain;
+background-size: cover;
+background-repeat: no-repeat;
 margin: 0px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
 }
 
 
 
 #container-b{
 background-color: white;
-padding: 20px;
+padding: 15px;
 margin: 0px;
 box-sizing: border-box;
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
 }
+button {
+  font-family: 'Montserrat';
+  border-radius: 5px;
+  width: 220px;
+  height: 50px;
+  background-color:hsl(158, 36%, 37%) ;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  
+  }
 
 
 </style>
@@ -81,6 +97,10 @@ box-sizing: border-box;
    <p>
     A floral, solar and voluptuous interpretation composed by Olivier Polge, 
     Perfumer-Creator for the House of CHANEL.   </p> 
+    <button>
+    <img src="images/icon-cart.svg" alt="#">
+    Add to Chart
+    </button>
     
     
  </div>
