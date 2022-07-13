@@ -21,6 +21,7 @@ body {
 background-color: hsl(30, 38%, 92%) ; 
 height: 100vh;
 width: 100vw;
+padding: 0px;
 margin: 0px;
 display: flex;
 flex-direction: row;
@@ -43,26 +44,31 @@ h2{
 
 div{
 width: 250px;
-height: 400px;
+height: 375px;
 display: inline-block;
 
 }
 
 #container-a{
 
-background-image: url(images/image-product-desktop.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-margin: 0px;
 border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
 }
+.imagem{
+position: relative;
+
+}
+.imagem img {
+  width:100%;
+}
+
+
 
 
 
 #container-b{
 background-color: white;
-padding: 15px;
+padding: 10px 20px 20px 20px;
 margin: 0px;
 box-sizing: border-box;
 border-bottom-right-radius: 5px;
@@ -71,13 +77,13 @@ border-top-right-radius: 5px;
 button {
   font-family: 'Montserrat';
   border-radius: 5px;
-  width: 220px;
-  height: 50px;
+  width: 210px;
+  height: 40px;
   background-color:hsl(158, 36%, 37%) ;
   margin-top: 50px;
   text-align: center;
   color: white;
-  padding: 10px;
+  
   
   }
 
@@ -89,6 +95,11 @@ button {
 <body>
   
 <div class="imagem" id="container-a">
+ <picture>
+  <source media="(max-width:600px)" srcset="images/image-product-mobile.jpg">
+  <img src="images/image-product-desktop.jpg" alt="desktop">
+</picture>
+ 
 </div>
 <div class="conteudo" id="container-b">
   <h2>PERFUME</h2>
