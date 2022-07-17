@@ -16,6 +16,38 @@ src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 @font-face {
   font-family: "Fraunces";
   src: url('fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('truetype');}
+@media(max-width:800px){
+div{
+position: relative;
+  
+}
+.imagem{
+  height: 550px;
+  width:270px;
+  background-color: white;
+  position: relative;
+float: left;
+}
+
+.conteudo{
+  height: 180px;
+  width:270px;
+  float: right;
+  position: absolute;
+  font-size: 0.8em;
+  
+  }
+#container-b{
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+}
+ 
+
+
+
+
 
 body {
 background-color: hsl(30, 38%, 92%) ; 
@@ -40,51 +72,59 @@ h1{
 h2{
  font-family: 'Montserrat'; 
  font-size: small;
+ font-weight: lighter;
 }
 
 div{
 width: 250px;
 height: 375px;
 display: inline-block;
-
 }
 
-#container-a{
 
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
-}
+
+
 .imagem{
 position: relative;
+float: left;
 
 }
 .imagem img {
   width:100%;
 }
-
-
-
-
-
 #container-b{
 background-color: white;
 padding: 10px 20px 20px 20px;
 margin: 0px;
 box-sizing: border-box;
-border-bottom-right-radius: 5px;
-border-top-right-radius: 5px;
+
 }
+.conteudo ul{display: flex;
+}
+.conteudo ul li {
+list-style-type: none;
+padding-right: 20px;
+color:hsl(158, 36%, 37%) ;
+font-size: 1.0em;
+font-family: 'Fraunces';
+}
+ #oferta{
+  font-size: x-large;
+  font-weight: bolder;
+}
+#preço{
+text-decoration: line-through;
+}
+
 button {
   font-family: 'Montserrat';
   border-radius: 5px;
   width: 210px;
   height: 40px;
   background-color:hsl(158, 36%, 37%) ;
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
   color: white;
-  
-  
   }
 
 
@@ -96,7 +136,7 @@ button {
   
 <div class="imagem" id="container-a">
  <picture>
-  <source media="(max-width:600px)" srcset="images/image-product-mobile.jpg">
+ <source media="(max-width: 800px)" srcset="images/image-product-mobile.jpg">
   <img src="images/image-product-desktop.jpg" alt="desktop">
 </picture>
  
@@ -108,6 +148,10 @@ button {
    <p>
     A floral, solar and voluptuous interpretation composed by Olivier Polge, 
     Perfumer-Creator for the House of CHANEL.   </p> 
+   <ul>
+<li id="oferta">$149.99</li>
+<li id="preço">$169.99</li>
+   </ul>
     <button>
     <img src="images/icon-cart.svg" alt="#">
     Add to Chart
