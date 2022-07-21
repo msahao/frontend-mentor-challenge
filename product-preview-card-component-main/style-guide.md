@@ -33,13 +33,3 @@ The designs were created to the following widths:
 
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700
-
-#container-a{
-background-image: url(images/image-product-desktop.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-margin: 0px;
-border-top-left-radius: 5px;
-border-bottom-left-radius: 5px;
-
-}
