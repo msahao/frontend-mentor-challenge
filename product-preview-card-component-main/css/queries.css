@@ -1,0 +1,19 @@
+@media (max-width: 44em) {
+    .produto {
+        flex-direction: column;
+        width: auto;
+        max-height: fit-content;
+        margin: 5rem 2rem;
+    }
+    .produto_imagem {
+        display: none;
+      }
+      .produto_imagem_mobile {
+        display: block;
+        width: 100%;
+      }
+
+      .produto_detalhes {
+        gap: 1.2rem;
+      }
+    }
