@@ -92,4 +92,8 @@
     font-size: 1rem;
     font-weight: 700;
   }
-  
+.purchase__button:hover,
+.purchase__button:active {
+  cursor: pointer;
+  background-color: var(--accent-dark);
+}

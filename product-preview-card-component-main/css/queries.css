@@ -1,9 +1,11 @@
 @media (max-width: 44em) {
     .produto {
         flex-direction: column;
-        width: auto;
-        max-height: fit-content;
+        max-width:42rem;
         margin: 5rem 2rem;
+        width: auto;
+        max-height: fit-content; 
+       
     }
     .produto_imagem {
         display: none;
@@ -16,4 +18,5 @@
       .produto_detalhes {
         gap: 1.2rem;
       }
+      
     }
